@@ -8,14 +8,14 @@ class Account:
 
     def withdraw(self,amount):
         if amount> self.balance:
-            print(f"Insufficient balance.")
+            return f"Insufficient balance."
         else:
             self.balance -=amount
-            print(f"Withdrawal of{amount} successful.New balance is {self.balance}.") 
+            return f"Withdrawal of{amount} successful.New balance is {self.balance}."
 
     def deposit(self,amount):
         self.balance +=amount
-        print(f"Deposit of {amount} successful. New balance is {self.balance}")
+        return f"Deposit of {amount} successful. New balance is {self.balance}"
 
     def check_balance(self):
-        print(f"Current balance is {self.balance}")
+        return f"Current balance is {self.balance}"
