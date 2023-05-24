@@ -54,7 +54,7 @@ class Account:
 # A successful loan increases the loan_balance by requested amount
     def borrow_loan(self,amount):
         if self.loan_balance>0:
-            return "Outstanding loan"
+            return "Outstanding loan already"
         if amount<100:
             return "Loan limit low, it must be more than 100"
         if len(self.deposits)<10:
