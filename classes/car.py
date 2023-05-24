@@ -8,7 +8,9 @@ class Car:
         self.color= color
 
     def accelerate(self):
-        return f"The acceleration of {self.model} is {self.speed}"  
+        self.speed+=acceleration
+        return acceleration
+  "  
 
     def type_engine(self):
         return f"The engine of {self.make} is single model"
