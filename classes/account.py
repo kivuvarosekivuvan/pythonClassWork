@@ -13,7 +13,7 @@ class Account:
 
     def withdraw(self,amount):
         if amount> self.balance:
-            return f"Insufficient balance."
+            return f"Insufficient balance"
         else:
             self.balance -=amount
             return f"Withdrawal of{amount} successful.New balance is {self.balance}."
