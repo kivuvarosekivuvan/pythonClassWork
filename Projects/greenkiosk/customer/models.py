@@ -24,3 +24,6 @@ class Customer(models.Model):
             return True
         
         return False
+    
+    class Meta:
+       verbose_name_plural = "customer"

@@ -10,4 +10,9 @@ class Product(models.Model):
     stock=models.PositiveIntegerField()
 
 
+    class Meta:
+       verbose_name_plural = "product"
+
+
+
 

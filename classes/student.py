@@ -14,7 +14,7 @@ class  Student:
       return f"Hello {self.first_name} {self.last_name}" 
 
    def year_of_birth(self)  :
-      current= datetime.datetime.now().year
+      current= datetime.datetime.now().year()
       return current - self.age
 
    def show_initials(self):
